@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
             <h1 style={{ color: "white" }}>Home Services at Your Doorstep</h1>
             <p style={{ color: "white" }}>Professional services for AC repair, washing machine repair, and refrigerator repair.</p>
           </div>
-          <img src="/acRepair.jpeg" alt="Home Services" />
+          <img src="/allrepair.jpeg" alt="Home Services" />
         </div>
         <TrackerIdForm/>
         <Features></Features>

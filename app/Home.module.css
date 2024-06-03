@@ -32,9 +32,9 @@
     }
    
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 425px ) {
     .hero img{
-      width: 91%;
+      width: 100%;
       position: absolute;
     border-radius: 10px;
 
@@ -45,4 +45,32 @@
 
     }
    
+  }
+  @media (max-width: 420px) and (min-width: 325px) {
+    .hero img {
+      /* font-size: 24px; */
+      width: 105%;
+      height: 200px;
+    }
+  }
+  @media (max-width: 390px)  {
+    .hero img {
+      /* font-size: 24px; */
+      width: 110%;
+      height: 200px;
+    }
+  }
+  @media (max-width: 375px)  {
+    .hero img {
+      /* font-size: 24px; */
+      width: 115%;
+      height: 200px;
+    }
+  }
+  @media (max-width: 330px)  {
+    .hero img {
+      /* font-size: 24px; */
+      width: 140%;
+      height: 200px;
+    }
   }
