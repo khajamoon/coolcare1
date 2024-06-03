@@ -68,7 +68,7 @@ export const searchtrackerid = createAsyncThunk(
 export const adminLogout = createAsyncThunk(
   "api/logout",
   async (data: any, thunkAPI) => {
-    console.log(App.services)
+    // console.log(App.services)
     let url = encodeURI(App.services.adminLogout);
     console.log(url)
 
@@ -111,7 +111,7 @@ export const users = createSlice({
       })
       .addCase(getUsers.fulfilled, (state, action: any) => {
         state.userLoading = true;
-        console.log(action.payload.data);
+        // console.log(action.payload.data);
         state.users = action.payload.data || null;
       })
       .addCase(getUsers.rejected, (state, action) => {
@@ -124,7 +124,7 @@ export const users = createSlice({
       })
       .addCase(generateotp.fulfilled, (state, action: any) => {
         state.userLoading = true;
-        console.log(action.payload.data);
+        // console.log(action.payload.data);
         state.generateOtp = action.payload.data || null;
       })
       .addCase(generateotp.rejected, (state, action) => {
@@ -137,7 +137,7 @@ export const users = createSlice({
       .addCase(verifyotp.fulfilled, (state, action: any) => {
         state.userLoading = true;
         console.log(action.payload.data);
-        console.log(action.payload);
+        // console.log(action.payload);
         state.verifyOtp = action.payload.data || null;
       })
       .addCase(verifyotp.rejected, (state, action) => {
@@ -150,8 +150,8 @@ export const users = createSlice({
       })
       .addCase(adminLogin.fulfilled, (state, action: any) => {
         // state.isLogin = true;
-        console.log(action.payload.data);
-        console.log(action.payload);
+        // console.log(action.payload.data);
+        // console.log(action.payload);
         state.admin = action.payload.data || null;
       })
       .addCase(adminLogin.rejected, (state, action) => {
@@ -164,8 +164,8 @@ export const users = createSlice({
       })
       .addCase(adminLogout.fulfilled, (state, action: any) => {
         // state.isLogin = true;
-        console.log(action.payload.data);
-        console.log(action.payload);
+        // console.log(action.payload.data);
+        // console.log(action.payload);
         state.admin =  null;
       })
       .addCase(adminLogout.rejected, (state, action) => {
@@ -178,8 +178,8 @@ export const users = createSlice({
       })
       .addCase(searchtrackerid.fulfilled, (state, action: any) => {
         // state.isLogin = true;
-        console.log(action.payload.data);
-        console.log(action.payload);
+        // console.log(action.payload.data);
+        // console.log(action.payload);
         state.searchtrackerIdLoading=true
         state.searchtrackerId = action.payload.data || null;
       })

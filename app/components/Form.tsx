@@ -24,7 +24,7 @@ const sendOTP = async (email) => {
 
   // Simulate sending OTP
   const otp = Math.floor(1000 + Math.random() * 9000).toString();
-  console.log(`OTP sent to ${email}: ${otp}`);
+  // console.log(`OTP sent to ${email}: ${otp}`);
   return otp;
 };
  
@@ -54,10 +54,10 @@ const UserForm = () => {
       setUserFormData(values)
       // const generatedOtp = await sendOTP(values.email);
       // setOtp(generatedOtp);
-      console.log(generateOtp)
+      // console.log(generateOtp)
       if(!generateOtp.isUser)
       {
-        console.log(generateOtp)
+        // console.log(generateOtp)
         setOtpSent(true);
       }
 
@@ -68,9 +68,9 @@ const UserForm = () => {
     dispatch(verifyotp({email:userFormData.email,otp:otpInput,mobileno:userFormData.mobileno})).then((res: any) => {
 
 
-      console.log(res,"jdsadjf")
+      // console.log(res,"jdsadjf")
       if (res.payload.data.message === "OTP Verified") {
-        console.log("oiiii")
+        // console.log("oiiii")
         let tempObj =userFormData
         tempObj.otp = otpInput
         dispatch(verifyotp(tempObj))

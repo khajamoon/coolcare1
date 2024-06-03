@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
                 ...formData,
                 address: sanitizeAddress(formData.address),
             };
-            console.log(sanitizedFormData);
+            // console.log(sanitizedFormData);
             setFormData({ name: '', email: '', address: '', phone: '' });
 
             

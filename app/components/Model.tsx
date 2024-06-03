@@ -22,7 +22,7 @@ export const EditUsersModal = (props: any) => {
   const dispatch = useDispatch<AppDispatch>();
   let [description, setDescription] = useState<string>('');
   let [name, setName] = useState<string>('');
-console.log(props.data)
+// console.log(props.data)
   const handleClose = () => {
     setCode('');
     props.setisOpen(false)
@@ -48,7 +48,7 @@ console.log(props.data)
     handleClose()
     dispatch(postUser(tempObj));
     dispatch(getUsers({}));
-   console.log(tempObj,"codecodecode")
+//    console.log(tempObj,"codecodecode")
     
 
   };
