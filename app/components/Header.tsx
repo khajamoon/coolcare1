@@ -28,7 +28,7 @@ const Header: React.FC = () => {
   }
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1rem 2rem", backgroundColor: "#fff;", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}>
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1rem 2rem", backgroundColor: "#fff;", width:"100%",boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}>
 
       <div className='logo' >Cool Care</div>
       <div style={{ listStyle: "none", display: "flex", gap: "1rem" }}>

@@ -37,7 +37,7 @@ module.exports = {
       {
         source: getBasePath() + '/api/:path*',
         destination: `${
-          process.env.NEXT_PUBLIC_BASE_URL ?? 'http://52.90.155.250:8000'
+          process.env.NEXT_PUBLIC_BASE_URL ?? 'http://54.80.254.144:8000'
           // process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:8000'
         }/api/:path*`,
         basePath: false
@@ -45,7 +45,7 @@ module.exports = {
       {
         source: getBasePath() + '/salvoeBridge/api/:path*',
         destination: `${
-          process.env.NEXT_PUBLIC_BASE_URL ?? 'http://52.90.155.250:8000'
+          process.env.NEXT_PUBLIC_BASE_URL ?? 'http://54.80.254.144:8000'
           // process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:8000'
         }/api/:path*`,
         basePath: false

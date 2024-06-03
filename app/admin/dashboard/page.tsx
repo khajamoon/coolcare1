@@ -44,7 +44,8 @@ export default function App() {
 
     return (
 
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+          <Header></Header>
         <Button>You are Not sign-in   </Button>
         <Button onClick={() => router.push('/admin')}>Click to go Sign-In  </Button>
       </div>

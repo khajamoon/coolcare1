@@ -1,7 +1,7 @@
 import { users } from "../../redux/features/jobs/usersSlice";
 
 export const App = {
-  baseUrl: "http://localhost:8000",
+  baseUrl: "http://54.80.254.144:8000",
 
   services: {
     users: "/api/users",

@@ -44,7 +44,6 @@ const UserLogin = () => {
 
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
 
-        <Header></Header>
         <Button>You are  sign-in   </Button>
         <Button onClick={() => router.push('/admin/dashboard')}>Click to go dashboard  </Button>
       </div>

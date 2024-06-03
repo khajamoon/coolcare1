@@ -61,6 +61,7 @@ const TrackerIdForm = () => {
         return (
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+                <Button>Your Response sent to Mail   </Button>
                 <Button onClick={() =>{ setFormSubmitted(false); setErrormessage(false)}}>Click to  Search another TrackerID  </Button>
             </div>
         )

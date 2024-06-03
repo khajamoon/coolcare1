@@ -88,7 +88,7 @@ export const EditUsersModal = (props: any) => {
          
         </Grid>
       </DialogContent>
-      <DialogActions>
+      <DialogActions >
         <Button
           style={{ marginRight: 10 }}
           onClick={handleClose}
@@ -99,7 +99,7 @@ export const EditUsersModal = (props: any) => {
         </Button>
         <Button
           variant="contained"
-          color="primary"
+          style={{ color: "#fff", backgroundColor: "#ff6347"}}
           onClick={handleSaveDisputeReason}
         >
           Update
