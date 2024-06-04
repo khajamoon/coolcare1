@@ -26,7 +26,7 @@ export const getUsers = createAsyncThunk(
   "api/use",
   async (data: any, thunkAPI) => {
     let url = encodeURI(App.services.users);
-    return API.get(url, data, null, null);
+    return API.post(url, data, null, null);
   }
 );
 
