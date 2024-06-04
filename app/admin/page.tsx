@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -26,19 +26,22 @@ const UserLogin = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-
       dispatch(adminLogin({ email: values.email, password: values.password }))
-
-      // if (admin.isAdmin) {
-
-      // router.push('/admin/dashboard');
-
-
-      // }
     },
   });
-  const routeToDashboard = () => {
 
+
+  useEffect(()=>
+  {
+
+    if(admin&& admin.message === "user Logout")
+      {
+        formik.resetForm()
+
+      }
+
+  },[admin])
+  const routeToDashboard = () => {
 
     return (
 

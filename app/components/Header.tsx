@@ -39,7 +39,7 @@ const Header: React.FC = () => {
 
         {admin && admin.isAdmin ? <MenuItem onClick={() => {
           router.push('/admin');
-          dispatch(adminLogout({ message:"user wants login" }))
+          dispatch(adminLogout({ message:"user wants to logout" }) )
         }}>LogOut</MenuItem> :
           <MenuItem onClick={() => router.push('/contact')}>Contact</MenuItem>
         }
