@@ -50,7 +50,7 @@ export const EditUsersModal = (props: any) => {
     const email = sessionStorage.getItem('email');
     const password = sessionStorage.getItem('password');
 
-    dispatch(getUsers({}))
+    dispatch(getUsers({email:email,password:password}))
 //    console.log(tempObj,"codecodecode")
     
 
