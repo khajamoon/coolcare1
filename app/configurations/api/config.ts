@@ -4,7 +4,7 @@ export const App = {
   baseUrl: "http://54.80.254.144:8000",
 
   services: {
-    users: "/api/users",
+    users: "/api/usersdata",
     createUser :"/api/user",
     generateotp :"/api/generateotp",
     verifyotp :"/api/verifyotp",
