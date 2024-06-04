@@ -26,27 +26,32 @@ const UserLogin = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      dispatch(adminLogin({ email: values.email, password: values.password }))
+      dispatch(adminLogin({ email: values.email, password: values.password })).then((res:any)=>{
+
+        if(res.payload.data?.isAdmin )
+        {
+          sessionStorage.setItem('email', values.email);
+          sessionStorage.setItem('password', values.password);
+        }
+
+      })
     },
   });
 
 
   useEffect(()=>
   {
-
     if(admin&& admin.message === "user Logout")
       {
         formik.resetForm()
 
       }
-
   },[admin])
   const routeToDashboard = () => {
 
     return (
 
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
-
         <Button>You are  sign-in   </Button>
         <Button onClick={() => router.push('/admin/dashboard')}>Click to go dashboard  </Button>
       </div>

@@ -6,8 +6,6 @@ import React, { useEffect, useState } from 'react';
 import styles from '../ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../redux/store';
-import { getUsers } from '../redux/features/jobs/usersSlice';
- 
 const ContactForm: React.FC = () => {
    
     const dispatch = useDispatch<AppDispatch>();
@@ -15,11 +13,7 @@ const ContactForm: React.FC = () => {
     const [errors, setErrors] = useState<{ phone?: string }>({});
 
     
-  useEffect(() => {
 
-    dispatch(getUsers({}));
-
-  }, []);
  
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;

@@ -47,7 +47,10 @@ export const EditUsersModal = (props: any) => {
     }
     handleClose()
     dispatch(postUser(tempObj));
-    dispatch(getUsers({}));
+    const email = sessionStorage.getItem('email');
+    const password = sessionStorage.getItem('password');
+
+    dispatch(getUsers({email:email,password:password}))
 //    console.log(tempObj,"codecodecode")
     
 

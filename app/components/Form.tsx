@@ -7,7 +7,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../redux/store';
-import { getUsers,generateotp,verifyotp, postUser } from '../redux/features/jobs/usersSlice';
+import { generateotp,verifyotp, postUser } from '../redux/features/jobs/usersSlice';
 
  
 const validationSchema = Yup.object({

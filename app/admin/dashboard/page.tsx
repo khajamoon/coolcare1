@@ -10,15 +10,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../redux/store';
 import { adminLogin,getUsers } from '../../redux/features/jobs/usersSlice';
 
-
-
-
 export default function App() {
-
   const router = useRouter()
-
-
-
   const dispatch = useDispatch<AppDispatch>();
   const { admin,users } = useSelector((state: RootState) => state.usersReducers);
 
@@ -26,7 +19,11 @@ export default function App() {
   const [isOpen, setisOpen] = useState(false)
 
   useEffect(()=>{
-    dispatch(getUsers({}))
+
+    const email = sessionStorage.getItem('email');
+    const password = sessionStorage.getItem('password');
+
+    dispatch(getUsers({email:email,password:password}))
   },[])
 
 

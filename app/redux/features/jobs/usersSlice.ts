@@ -13,6 +13,7 @@ const initialState: any = {
   searchtrackerId:null,
   searchtrackerIdLoading:null,
   
+  
 
 
   
@@ -22,10 +23,10 @@ const initialState: any = {
 
 /*GetClients*/
 export const getUsers = createAsyncThunk(
-  "api/users",
+  "api/use",
   async (data: any, thunkAPI) => {
     let url = encodeURI(App.services.users);
-    return API.get(url, null, null, null);
+    return API.post(url, data, null, null);
   }
 );
 
