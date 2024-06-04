@@ -72,7 +72,7 @@ export const adminLogout = createAsyncThunk(
     let url = encodeURI(App.services.adminLogout);
     console.log(url)
 
-    return API.post("http://localhost:3000/api/adminlogout", data, null, null);
+    return API.post(url, data, null, null);
   }
 );
 
