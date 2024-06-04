@@ -72,7 +72,7 @@ export const adminLogout = createAsyncThunk(
     let url = encodeURI(App.services.adminLogout);
     console.log(url)
 
-    return API.post("https://coolcare.vercel.app/admin/api/adminlogout", data, null, null);
+    return API.post("https://coolcare.vercel.app/api/adminlogout", data, null, null);
   }
 );
 
